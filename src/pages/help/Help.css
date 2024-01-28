@@ -1,18 +1,6 @@
-.wrapper{
-    max-width: 390px;
-    width: 90vw;
-    margin: 0 auto;
-}
-
-header{
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-}
-
 header p{
     margin-left: 7px;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -28,7 +16,7 @@ header p{
     display: flex;
     flex-direction: column;
     min-height: 65vh;
-    padding: 40px 0;
+    padding: 80px 0;
 }
 
 footer{
@@ -42,12 +30,12 @@ footer{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 10px;
+    font-size: 16px;
     font-weight: 500;
 }
 
 .footer-part img{
-    height: 20px;
+    height: 40px;
     margin-bottom: 5px;
 }
 
@@ -63,7 +51,7 @@ footer{
 .major-content{
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .major-content.own{
@@ -95,7 +83,7 @@ footer{
 .send-message input{
     border: none;
     outline: none;
-    font-size: 14px;
+    font-size: 20px;
     width: 72vw;
 }
 
@@ -105,18 +93,174 @@ footer{
 
 .message-sender{
     color: #0D8967;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 7px;
 }
 
 .message{
     color: #ffffff;
-    font-size: 12px;
-    padding: 20px 10px;
+    font-size: 18px;
+    padding: 20px 40px;
     width: max-content;
     min-width: 200px;
     border-radius: 20px;
     text-align: left;
-    max-width: 300px;
+    max-width: 600px;
+}
+
+.op{
+    display: flex;
+    align-items: center;
+}
+
+.op img{
+    margin-left: 20px;
+}
+
+.op div p span{
+    color: #0D8967;
+    font-size: 36px;
+}
+
+.major-content img{
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    .wrapper{
+        max-width: 390px;
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+    header{
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    header p{
+        margin-left: 7px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .chat{
+        flex: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+        max-height: 60vh;
+    }
+    
+    .chat-container{
+        display: flex;
+        flex-direction: column;
+        min-height: 65vh;
+        padding: 40px 0;
+    }
+    
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .footer-part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    
+    .footer-part img{
+        height: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .send-message{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: solid 1px #000000;
+        border-radius: 40px;
+        padding: 10px 15px;
+    }
+    
+    .major-content{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .major-content.own{
+        align-items: flex-end;
+    }
+    
+    .major-content.asima{
+        align-items: flex-start;
+    }
+    
+    .message-container{
+        flex-wrap: wrap;
+    }
+    
+    .message-container.own{
+        text-align: right;
+    }
+    
+    .message-container.own .message{
+        background-color: #0D8967;
+        font-weight: 600;
+    }
+    
+    .message-container.asima .message{
+        background-color: #A0A0A0;
+        font-weight: 400;
+    }
+    
+    .send-message input{
+        border: none;
+        outline: none;
+        font-size: 14px;
+        width: 72vw;
+    }
+    
+    .send-message.active{
+        border: solid 1px #0D8967;
+    }
+    
+    .message-sender{
+        color: #0D8967;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 7px;
+    }
+    
+    .message{
+        color: #ffffff;
+        font-size: 12px;
+        padding: 20px 10px;
+        width: max-content;
+        min-width: 200px;
+        border-radius: 20px;
+        text-align: left;
+        max-width: 300px;
+    }
+}
+
+.wrapper{
+    max-width: 1470px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
 }
