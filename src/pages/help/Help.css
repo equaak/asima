@@ -19,6 +19,7 @@ header p{
 .chat{
     flex: 1;
     overflow-y: auto;
+    overflow-x: hidden;
     max-height: 60vh;
 }
 
@@ -70,6 +71,10 @@ footer{
 
 .major-content.asima{
     align-items: flex-start;
+}
+
+.message-container{
+    max-width: 300px;
 }
 
 .message-container.own{
