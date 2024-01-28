@@ -32,7 +32,7 @@ const Help = () => {
   };
 
   const handleResponse = async () => {
-    const response = await axios.post("http://192.168.0.106:5000/openai", {
+    const response = await axios.post("http://localhost:5000/openai", {
       text: message,
     });
     setMessages((prevMessages) => [...prevMessages, [response.data, true]]);
