@@ -27,7 +27,7 @@ const Help = () => {
 
                     <div className={active ? 'send-message active' : 'send-message unactive'} onClick={handleClick}>
                         <input type='text' />
-                        <img src={send} alt='' />
+                        <img src={active ? sendActive : send} alt='' />
                     </div>
                 </main>
                 <footer>
